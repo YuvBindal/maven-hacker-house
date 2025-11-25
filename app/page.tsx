@@ -55,8 +55,8 @@ export default function Home() {
       {/* What to Expect Section */}
       <section className="px-6 py-16 md:py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
         {/* Decorative floating orbs */}
-        <div className="absolute top-10 right-20 w-24 h-24 bg-gradient-to-br from-yellow-300/30 to-orange-300/30 rounded-full blur-2xl animate-float"></div>
-        <div className="absolute bottom-10 left-20 w-32 h-32 bg-gradient-to-br from-green-300/30 to-emerald-300/30 rounded-full blur-2xl animate-float" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-10 right-20 w-24 h-24 bg-gradient-to-br from-gray-400/20 to-gray-500/20 rounded-full blur-2xl animate-float"></div>
+        <div className="absolute bottom-10 left-20 w-32 h-32 bg-gradient-to-br from-gray-500/20 to-gray-600/20 rounded-full blur-2xl animate-float" style={{animationDelay: '1s'}}></div>
 
         <div className="mx-auto max-w-5xl relative z-10">
           <h2 className="mb-16 text-center text-4xl font-bold tracking-tight text-black md:text-5xl">
@@ -93,9 +93,9 @@ export default function Home() {
       {/* Benefits Section */}
       <section className="px-6 py-16 md:py-24 relative overflow-hidden">
         {/* Floating decorative elements */}
-        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-br from-yellow-400/10 to-orange-400/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-gray-400/15 to-gray-500/15 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-gray-500/15 to-gray-600/15 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-br from-gray-400/8 to-gray-500/8 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
 
         <div className="mx-auto max-w-6xl relative z-10">
           <div className="grid gap-8 md:grid-cols-3">
@@ -106,7 +106,7 @@ export default function Home() {
                 gradientTo="rgb(236, 72, 153)"
                 iconBgFrom="rgb(147, 51, 234)"
                 iconBgTo="rgb(236, 72, 153)"
-                icon={<Users className="h-7 w-7 text-white" />}
+                icon={<Users className="h-7 w-7 text-black" />}
                 title="Community"
                 description="Join a vibrant community of builders"
                 content="Connect with like-minded founders and developers who are passionate about building products. Collaborate, share ideas, and grow together in a supportive environment designed for makers."
@@ -120,7 +120,7 @@ export default function Home() {
                 gradientTo="rgb(6, 182, 212)"
                 iconBgFrom="rgb(37, 99, 235)"
                 iconBgTo="rgb(6, 182, 212)"
-                icon={<Calendar className="h-7 w-7 text-white" />}
+                icon={<Calendar className="h-7 w-7 text-black" />}
                 title="Exclusive Events"
                 description="Access to unique opportunities"
                 content="Participate in pitch events, get introductions to potential customers for pilot programs, and attend regular fireside chats with successful founders and industry leaders."
@@ -134,7 +134,7 @@ export default function Home() {
                 gradientTo="rgb(239, 68, 68)"
                 iconBgFrom="rgb(234, 88, 12)"
                 iconBgTo="rgb(239, 68, 68)"
-                icon={<Rocket className="h-7 w-7 text-white" />}
+                icon={<Rocket className="h-7 w-7 text-black" />}
                 title="Build Your Company"
                 description="From idea to customers"
                 content="Build an idea from scratch and take it to the next level. Walk in with an idea and walk out with a company that has actual customers. Our goal is to help each other succeed."
