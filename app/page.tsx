@@ -170,7 +170,7 @@ export default function Home() {
                 href="mailto:yuv2bindal@theridgeemail.com"
                 className="text-black underline hover:text-gray-700"
               >
-                yuv2bindal@theridgeemail.com
+                yuv2bindal@gmail.com
               </a>
             </div>
             <Button size="lg" className="text-lg px-8 py-6">
