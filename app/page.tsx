@@ -43,9 +43,11 @@ export default function Home() {
           <p className="mb-8 text-xl text-white md:text-2xl drop-shadow-md">
             Maven Hacker House
           </p>
-          <Button size="lg" className="text-lg px-8 py-6">
-            Apply
-          </Button>
+          <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="text-lg px-8 py-6">
+              Apply
+            </Button>
+          </a>
         </div>
       </section>
 
@@ -207,9 +209,11 @@ export default function Home() {
                 yuv2bindal@gmail.com
               </a>
             </div>
-            <Button size="lg" className="text-lg px-8 py-6">
-              Apply Now
-            </Button>
+            <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="text-lg px-8 py-6">
+                Apply Now
+              </Button>
+            </a>
           </div>
         </div>
       </footer>
