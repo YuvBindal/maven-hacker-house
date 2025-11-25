@@ -19,25 +19,68 @@ export default function Home() {
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative px-6 py-24 md:py-32 lg:py-40 overflow-hidden">
-        {/* Animated background elements */}
-        <div className="absolute inset-0 -z-10">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-200/20 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-purple-200/20 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }} />
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: 'url(/singapore-hero.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        >
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
-        <div className="mx-auto max-w-4xl text-center">
-          <h1 className="mb-4 text-5xl font-bold tracking-tight md:text-6xl lg:text-7xl animate-scale-in">
-            <span className="gradient-text">Turn ideas into reality.</span>
+        {/* Content */}
+        <div className="relative z-10 mx-auto max-w-4xl text-center">
+          <h1 className="mb-4 text-5xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl drop-shadow-lg">
+            Turn ideas into reality.
             <br />
             <span className="text-black">Join Singapore&apos;s first hacker house.</span>
           </h1>
-          <p className="mb-8 text-xl text-gray-600 md:text-2xl animate-fade-in" style={{ animationDelay: '0.3s', opacity: 0 }}>
+          <p className="mb-8 text-xl text-white md:text-2xl drop-shadow-md">
             Maven Hacker House
           </p>
           <div className="animate-fade-in" style={{ animationDelay: '0.6s', opacity: 0 }}>
             <Button size="lg" className="text-lg px-8 py-6 btn-animated relative z-10">
               Apply
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* What to Expect Section */}
+      <section className="px-6 py-16 md:py-24 bg-gray-50">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-16 text-center text-4xl font-bold tracking-tight text-black md:text-5xl">
+            What to Expect
+          </h2>
+          <div className="space-y-12">
+            <div className="group">
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
+                use <span className="font-semibold text-black">demo day</span> to prove your skills to potential collaborators, employees, and investors
+              </p>
+            </div>
+
+            <div className="group">
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
+                stay <span className="font-semibold text-black">clear minded and accountable</span> with weekly syncs and coaching sessions.
+              </p>
+            </div>
+
+            <div className="group">
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
+                <span className="font-semibold text-black">connect</span> with someone who will 10x your trajectory through intros and fireside chats - with people like sam altman, alex blania, and danielle strachman.
+              </p>
+            </div>
+
+            <div className="group">
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
+                most of all, expect <span className="font-semibold text-black">spontaneous adventures and late night conversations</span> with your fellow residents..
+              </p>
+            </div>
           </div>
         </div>
       </section>
