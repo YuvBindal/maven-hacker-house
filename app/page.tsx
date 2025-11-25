@@ -49,6 +49,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* What to Expect Section */}
+      <section className="px-6 py-16 md:py-24 bg-gray-50">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-16 text-center text-4xl font-bold tracking-tight text-black md:text-5xl">
+            What to Expect
+          </h2>
+          <div className="space-y-12">
+            <div className="group">
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
+                use <span className="font-semibold text-black">demo day</span> to prove your skills to potential collaborators, employees, and investors
+              </p>
+            </div>
+
+            <div className="group">
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
+                stay <span className="font-semibold text-black">clear minded and accountable</span> with weekly syncs and coaching sessions.
+              </p>
+            </div>
+
+            <div className="group">
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
+                <span className="font-semibold text-black">connect</span> with someone who will 10x your trajectory through intros and fireside chats - with people like sam altman, alex blania, and danielle strachman.
+              </p>
+            </div>
+
+            <div className="group">
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
+                most of all, expect <span className="font-semibold text-black">spontaneous adventures and late night conversations</span> with your fellow residents..
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Benefits Section */}
       <section className="px-6 py-16 md:py-24">
         <div className="mx-auto max-w-6xl">
