@@ -18,14 +18,29 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative px-6 py-24 md:py-32 lg:py-40">
-        <div className="mx-auto max-w-4xl text-center">
-          <h1 className="mb-4 text-5xl font-bold tracking-tight text-black md:text-6xl lg:text-7xl">
+      <section className="relative px-6 py-24 md:py-32 lg:py-40 overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: 'url(/singapore-hero.jpg)',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+          }}
+        >
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-black/50"></div>
+        </div>
+
+        {/* Content */}
+        <div className="relative z-10 mx-auto max-w-4xl text-center">
+          <h1 className="mb-4 text-5xl font-bold tracking-tight text-white md:text-6xl lg:text-7xl drop-shadow-lg">
             Turn ideas into reality.
             <br />
             Join Singapore&apos;s first hacker house.
           </h1>
-          <p className="mb-8 text-xl text-gray-600 md:text-2xl">
+          <p className="mb-8 text-xl text-white md:text-2xl drop-shadow-md">
             Maven Hacker House
           </p>
           <Button size="lg" className="text-lg px-8 py-6">
