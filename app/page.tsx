@@ -189,6 +189,15 @@ export default function Home() {
                 Expect to hear back within a week or two of applying.
               </AccordionContent>
             </AccordionItem>
+
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-lg font-semibold">
+                How long is this program?
+              </AccordionTrigger>
+              <AccordionContent className="text-base text-gray-600">
+                It&apos;s six months long, starting from January till June.
+              </AccordionContent>
+            </AccordionItem>
           </Accordion>
         </div>
       </section>
