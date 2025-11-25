@@ -70,13 +70,13 @@ export default function Home() {
 
             <div className="group">
               <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
-                <span className="font-semibold text-black">connect</span> with someone who will 10x your trajectory through intros and fireside chats - with people like sam altman, alex blania, and danielle strachman.
+                <span className="font-semibold text-black">connect</span> with someone who will 10x your trajectory through intros and fireside chats.
               </p>
             </div>
 
             <div className="group">
               <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
-                most of all, expect <span className="font-semibold text-black">spontaneous adventures and late night conversations</span> with your fellow residents..
+                most of all, expect <span className="font-semibold text-black">spontaneous adventures and late night conversations</span> with your fellow residents...
               </p>
             </div>
           </div>
@@ -197,7 +197,7 @@ export default function Home() {
           <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
             <div className="text-center md:text-left">
               <h3 className="mb-2 text-2xl font-bold text-black">
-                Maven Hacker House
+                Maven Hacker House 
               </h3>
               <p className="text-gray-600">Contact us</p>
               <a
