@@ -43,7 +43,7 @@ export default function Home() {
           <p className="mb-8 text-xl text-white md:text-2xl drop-shadow-md">
             Maven Hacker House
           </p>
-          <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank" rel="noopener noreferrer">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScJJtA9pEUUlmjTh99r4QjD2eelLtNHi7VVElr4ya3UFL3avw/viewform" target="_blank" rel="noopener noreferrer">
             <Button size="lg" className="text-lg px-8 py-6">
               Apply
             </Button>
