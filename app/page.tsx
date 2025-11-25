@@ -6,6 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { Card3D } from "@/components/ui/card-3d";
 import {
   Accordion,
   AccordionContent,
@@ -50,33 +51,37 @@ export default function Home() {
       </section>
 
       {/* What to Expect Section */}
-      <section className="px-6 py-16 md:py-24 bg-gray-50">
-        <div className="mx-auto max-w-5xl">
+      <section className="px-6 py-16 md:py-24 bg-gradient-to-br from-gray-50 via-white to-gray-50 relative overflow-hidden">
+        {/* Decorative floating orbs */}
+        <div className="absolute top-10 right-20 w-24 h-24 bg-gradient-to-br from-yellow-300/30 to-orange-300/30 rounded-full blur-2xl animate-float"></div>
+        <div className="absolute bottom-10 left-20 w-32 h-32 bg-gradient-to-br from-green-300/30 to-emerald-300/30 rounded-full blur-2xl animate-float" style={{animationDelay: '1s'}}></div>
+
+        <div className="mx-auto max-w-5xl relative z-10">
           <h2 className="mb-16 text-center text-4xl font-bold tracking-tight text-black md:text-5xl">
             What to Expect
           </h2>
           <div className="space-y-12">
-            <div className="group">
-              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
-                use <span className="font-semibold text-black">demo day</span> to prove your skills to potential collaborators, employees, and investors
+            <div className="group transform transition-all duration-300 hover:translate-x-2">
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed hover:text-gray-900 transition-colors">
+                use <span className="font-semibold text-black bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">demo day</span> to prove your skills to potential collaborators, employees, and investors
               </p>
             </div>
 
-            <div className="group">
-              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
-                stay <span className="font-semibold text-black">clear minded and accountable</span> with weekly syncs and coaching sessions.
+            <div className="group transform transition-all duration-300 hover:translate-x-2">
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed hover:text-gray-900 transition-colors">
+                stay <span className="font-semibold text-black bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">clear minded and accountable</span> with weekly syncs and coaching sessions.
               </p>
             </div>
 
-            <div className="group">
-              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
-                <span className="font-semibold text-black">connect</span> with someone who will 10x your trajectory through intros and fireside chats.
+            <div className="group transform transition-all duration-300 hover:translate-x-2">
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed hover:text-gray-900 transition-colors">
+                <span className="font-semibold text-black bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">connect</span> with someone who will 10x your trajectory through intros and fireside chats.
               </p>
             </div>
 
-            <div className="group">
-              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed">
-                most of all, expect <span className="font-semibold text-black">spontaneous adventures and late night conversations</span> with your fellow residents...
+            <div className="group transform transition-all duration-300 hover:translate-x-2">
+              <p className="text-xl md:text-2xl text-gray-800 leading-relaxed hover:text-gray-900 transition-colors">
+                most of all, expect <span className="font-semibold text-black bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">spontaneous adventures and late night conversations</span> with your fellow residents...
               </p>
             </div>
           </div>
@@ -84,69 +89,55 @@ export default function Home() {
       </section>
 
       {/* Benefits Section */}
-      <section className="px-6 py-16 md:py-24">
-        <div className="mx-auto max-w-6xl">
+      <section className="px-6 py-16 md:py-24 relative overflow-hidden">
+        {/* Floating decorative elements */}
+        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-purple-400/20 to-pink-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-gradient-to-br from-blue-400/20 to-cyan-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-br from-yellow-400/10 to-orange-400/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
+
+        <div className="mx-auto max-w-6xl relative z-10">
           <div className="grid gap-8 md:grid-cols-3">
             {/* Community Card */}
-            <Card className="border-2 transition-shadow hover:shadow-lg">
-              <CardHeader>
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-black">
-                  <Users className="h-6 w-6 text-white" />
-                </div>
-                <CardTitle className="text-2xl">Community</CardTitle>
-                <CardDescription className="text-base">
-                  Join a vibrant community of builders
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Connect with like-minded founders and developers who are
-                  passionate about building products. Collaborate, share ideas,
-                  and grow together in a supportive environment designed for
-                  makers.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="group">
+              <Card3D
+                gradientFrom="rgb(147, 51, 234)"
+                gradientTo="rgb(236, 72, 153)"
+                iconBgFrom="rgb(147, 51, 234)"
+                iconBgTo="rgb(236, 72, 153)"
+                icon={<Users className="h-7 w-7 text-white" />}
+                title="Community"
+                description="Join a vibrant community of builders"
+                content="Connect with like-minded founders and developers who are passionate about building products. Collaborate, share ideas, and grow together in a supportive environment designed for makers."
+              />
+            </div>
 
             {/* Exclusive Events Card */}
-            <Card className="border-2 transition-shadow hover:shadow-lg">
-              <CardHeader>
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-black">
-                  <Calendar className="h-6 w-6 text-white" />
-                </div>
-                <CardTitle className="text-2xl">Exclusive Events</CardTitle>
-                <CardDescription className="text-base">
-                  Access to unique opportunities
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Participate in pitch events, get introductions to potential
-                  customers for pilot programs, and attend regular fireside
-                  chats with successful founders and industry leaders.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="group">
+              <Card3D
+                gradientFrom="rgb(37, 99, 235)"
+                gradientTo="rgb(6, 182, 212)"
+                iconBgFrom="rgb(37, 99, 235)"
+                iconBgTo="rgb(6, 182, 212)"
+                icon={<Calendar className="h-7 w-7 text-white" />}
+                title="Exclusive Events"
+                description="Access to unique opportunities"
+                content="Participate in pitch events, get introductions to potential customers for pilot programs, and attend regular fireside chats with successful founders and industry leaders."
+              />
+            </div>
 
             {/* Company Card */}
-            <Card className="border-2 transition-shadow hover:shadow-lg">
-              <CardHeader>
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-black">
-                  <Rocket className="h-6 w-6 text-white" />
-                </div>
-                <CardTitle className="text-2xl">Build Your Company</CardTitle>
-                <CardDescription className="text-base">
-                  From idea to customers
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-600">
-                  Build an idea from scratch and take it to the next level.
-                  Walk in with an idea and walk out with a company that has
-                  actual customers. Our goal is to help each other succeed.
-                </p>
-              </CardContent>
-            </Card>
+            <div className="group">
+              <Card3D
+                gradientFrom="rgb(234, 88, 12)"
+                gradientTo="rgb(239, 68, 68)"
+                iconBgFrom="rgb(234, 88, 12)"
+                iconBgTo="rgb(239, 68, 68)"
+                icon={<Rocket className="h-7 w-7 text-white" />}
+                title="Build Your Company"
+                description="From idea to customers"
+                content="Build an idea from scratch and take it to the next level. Walk in with an idea and walk out with a company that has actual customers. Our goal is to help each other succeed."
+              />
+            </div>
           </div>
         </div>
       </section>
